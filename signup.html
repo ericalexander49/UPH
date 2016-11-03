@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menambah Daftar User</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body{
+        font-family : arial;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1>Menambah Daftar User</h1>
+
+    <form method="post" action="signup.php" enctype="multipart/form-data">
+        <div>
+            <label>Username : </label>
+            <input type="text" name="username" placeholder="Username" style="margin-left: 20px;"><br><br>
+        </div>
+        <div>
+            <label style="margin-left: 40px;">Password : </label>
+            <input type="password" name="password" placeholder="password" style="margin-left: 20px;">
+        </div>
+    
+        <div>
+            <input type="submit" value="Submit" style="margin: 50px; padding: 50px;">
+        </div>
+    </form>
+</body>
+</html>

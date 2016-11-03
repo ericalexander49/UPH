@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menambah karyawan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style = "font-family : arial; margin-left : 50px">
+    <h1>Menambah data karyawan</h1>
+
+    <form method="post" action="create.php" enctype="multipart/form-data">
+        <div>
+            <label style = "margin-left : 82px">NIK : </label>
+            <input type="text" name="NIK" placeholder="NIK">
+        </div><br>
+        <div>
+            <label>Nama Lengkap : </label>
+            <input type="text" name="Nama" placeholder="Nama Lengkap">
+        </div><br>
+        <div>
+            <label style = "margin-left : 9px">Jenis Kelamin : </label>
+            <input type="radio" name="JenisKelamin" value="Laki-Laki" checked> Laki-Laki<input type="radio" name="JenisKelamin" value="Perempuan" style = "margin-left : 20px"> Perempuan<br>
+        </div><br>
+        <div>
+            <label style = "margin-left : 16px">Tempat Lahir : </label>
+            <input type="text" name="TempatLahir" placeholder="Tempat Lahir">
+        </div><br>
+        <div>
+            <label style = "margin-left : 12px">Tanggal Lahir : </label>
+            <input type="date" name="TanggalLahir" placeholder="Tanggal Lahir" style = "width : 168px">
+        </div><br>
+        <div>
+            <input type="submit" value="Simpan" style = "margin-left : 20px; width : 150px; height : 80px; border-radius : 20px; border-collapse : collapse; border : black">
+        </div>
+    </form>
+</body>
+</html>
