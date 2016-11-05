@@ -33,5 +33,6 @@ if (isset($_POST["NIK"]) && isset($_POST["Nama"]) && isset($_POST["JenisKelamin"
     echo "<p>Data karyawan belum diisi!</p>";
 }
 ?>
+<a href = "read.php"><input type = "submit" value = "Lihat Karyawan"></a>
 </body>
 </html>

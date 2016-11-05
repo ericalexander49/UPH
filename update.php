@@ -42,5 +42,6 @@ else
 	echo "<p>Gagal Mengupdate Data karyawan</p>";
 
 ?>
+<a href = "read.php"><input type = "submit" value = "Lihat Karyawan"></a>
 </body>
 </html>

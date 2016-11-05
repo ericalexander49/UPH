@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Daftar Karyawan</title>
+	<style>
+		body {
+			text-align : center;
+		}
+
+		table, th , td {
+			border : 1px solid black;
+			border-collapse : collapse;
+			border-spacing : 15px;
+			padding : 20px;
+			margin : 20px;
+		}
+
+		.table {
+			margin-left : 280px;
+		}
+	</style>
 </head>
 <body style = "font-family : arial">
 <?php 
@@ -16,7 +33,8 @@ if(! $result)
 
 $rows = $query->get_result();
  ?>
-
+<h1>DAFTAR KARYAWAN</h1>
+<div class = "table">
 <table>
 		<tr>
 			<th>NIK</th>
@@ -24,6 +42,7 @@ $rows = $query->get_result();
 			<th>Jenis Kelamin</th>
 			<th>Tempat Lahir</th>	
 			<th>Tanggal Lahir</th>
+			<th>Action</th>
 		</tr>
 		<?php 
 		while ($row = $rows->fetch_array()) {
@@ -44,6 +63,7 @@ $rows = $query->get_result();
 		}
 		 ?>
 </table>
-
+</div>
+<a href = "create.html"><input type = "submit" value = "Tambah Karyawan"></a>
 </body>
 </html>

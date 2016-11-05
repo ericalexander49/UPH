@@ -21,7 +21,7 @@ if(!$result)
 	die("gagal query");
 $rows = $query->get_result();
 if($rows->num_rows==0)
-	die("produk tidak ditemukan");
+	die("data karyawan tidak ditemukan");
 $produk = $rows->fetch_object();
 
 $query = $conn->prepare("delete from karyawan where NIK=?");
@@ -33,5 +33,6 @@ if($result)
 else
 	echo"<p>Gagal mendelete data karyawan</p>";
 ?>
+<a href = "read.php"><input type = "submit" value = "Lihat Karyawan"></a>
 </body>
 </html>
